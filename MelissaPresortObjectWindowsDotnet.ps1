@@ -19,7 +19,7 @@ class DLLConfig {
 
 ######################### Config ###########################
 
-$RELEASE_VERSION = '2023.03'
+$RELEASE_VERSION = '2023.04'
 $ProductName = "presort_data"
 
 # Uses the location of the .ps1 file 
