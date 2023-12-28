@@ -19,7 +19,7 @@ class FileConfig {
 
 ######################### Config ###########################
 
-$RELEASE_VERSION = '2023.10'
+$RELEASE_VERSION = '2023.11'
 $ProductName = "presort_data"
 
 # Uses the location of the .ps1 file 
