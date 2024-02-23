@@ -171,7 +171,7 @@ DownloadDataFiles -license $License      # comment out this line if using DQS Re
 DownloadDlls -license $License
 
 # Download wrapper(s)
-DownloadWrapper -license $License
+#DownloadWrapper -license $License
 
 # Check if all dll(s) have been downloaded. Exit script if missing
 $DLLsAreDownloaded = CheckDLLs
