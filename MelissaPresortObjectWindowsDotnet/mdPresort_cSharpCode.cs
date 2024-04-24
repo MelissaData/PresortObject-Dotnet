@@ -923,67 +923,67 @@ namespace MelissaData {
 		}
 
 		public bool SetLicenseString(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			return (mdPresortUnmanaged.mdPresortSetLicenseString(i, u_p1.GetUtf8Ptr()) != 0);
+			EncodedString u_p1 = new EncodedString(p1);
+			return (mdPresortUnmanaged.mdPresortSetLicenseString(i, u_p1.GetPtr()) != 0);
 		}
 
 		public void SetPathToPresortDataFiles(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetPathToPresortDataFiles(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetPathToPresortDataFiles(i, u_p1.GetPtr());
 		}
 
 		public string GetInitializeErrorString() {
-			return Utf8String.GetUnicodeString(mdPresortUnmanaged.mdPresortGetInitializeErrorString(i));
+			return EncodedString.GetEncodedString(mdPresortUnmanaged.mdPresortGetInitializeErrorString(i));
 		}
 
 		public string GetParametersErrorString() {
-			return Utf8String.GetUnicodeString(mdPresortUnmanaged.mdPresortGetParametersErrorString(i));
+			return EncodedString.GetEncodedString(mdPresortUnmanaged.mdPresortGetParametersErrorString(i));
 		}
 
 		public string GetBuildNumber() {
-			return Utf8String.GetUnicodeString(mdPresortUnmanaged.mdPresortGetBuildNumber(i));
+			return EncodedString.GetEncodedString(mdPresortUnmanaged.mdPresortGetBuildNumber(i));
 		}
 
 		public string GetLicenseStringExpirationDate() {
-			return Utf8String.GetUnicodeString(mdPresortUnmanaged.mdPresortGetLicenseStringExpirationDate(i));
+			return EncodedString.GetEncodedString(mdPresortUnmanaged.mdPresortGetLicenseStringExpirationDate(i));
 		}
 
 		public string GetDatabaseExpirationDate() {
-			return Utf8String.GetUnicodeString(mdPresortUnmanaged.mdPresortGetDatabaseExpirationDate(i));
+			return EncodedString.GetEncodedString(mdPresortUnmanaged.mdPresortGetDatabaseExpirationDate(i));
 		}
 
 		public string GetDatabaseDate() {
-			return Utf8String.GetUnicodeString(mdPresortUnmanaged.mdPresortGetDatabaseDate(i));
+			return EncodedString.GetEncodedString(mdPresortUnmanaged.mdPresortGetDatabaseDate(i));
 		}
 
 		public void SetZip(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetZip(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetZip(i, u_p1.GetPtr());
 		}
 
 		public void SetPlus4(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetPlus4(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetPlus4(i, u_p1.GetPtr());
 		}
 
 		public void SetCarrierRoute(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetCarrierRoute(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetCarrierRoute(i, u_p1.GetPtr());
 		}
 
 		public void SetWalkSequence(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetWalkSequence(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetWalkSequence(i, u_p1.GetPtr());
 		}
 
 		public void SetDeliveryPointCode(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetDeliveryPointCode(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetDeliveryPointCode(i, u_p1.GetPtr());
 		}
 
 		public void SetBusinessResidentialIndicator(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetBusinessResidentialIndicator(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetBusinessResidentialIndicator(i, u_p1.GetPtr());
 		}
 
 		public void SetPSPermitImprint(bool p1) {
@@ -991,13 +991,13 @@ namespace MelissaData {
 		}
 
 		public void SetLOTNumber(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetLOTNumber(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetLOTNumber(i, u_p1.GetPtr());
 		}
 
 		public void SetLOTOrder(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetLOTOrder(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetLOTOrder(i, u_p1.GetPtr());
 		}
 
 		public void SetPSASE(bool p1) {
@@ -1033,8 +1033,8 @@ namespace MelissaData {
 		}
 
 		public void SetPSCASSDate(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetPSCASSDate(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetPSCASSDate(i, u_p1.GetPtr());
 		}
 
 		public void SetPSPrecanceledStamp(bool p1) {
@@ -1042,133 +1042,133 @@ namespace MelissaData {
 		}
 
 		public void SetPSPermitHolderName(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetPSPermitHolderName(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetPSPermitHolderName(i, u_p1.GetPtr());
 		}
 
 		public void SetPSPermitHolderCompany(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetPSPermitHolderCompany(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetPSPermitHolderCompany(i, u_p1.GetPtr());
 		}
 
 		public void SetPSPermitHolderStreet(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetPSPermitHolderStreet(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetPSPermitHolderStreet(i, u_p1.GetPtr());
 		}
 
 		public void SetPSPermitHolderCity(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetPSPermitHolderCity(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetPSPermitHolderCity(i, u_p1.GetPtr());
 		}
 
 		public void SetPSPermitHolderState(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetPSPermitHolderState(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetPSPermitHolderState(i, u_p1.GetPtr());
 		}
 
 		public void SetPSPermitHolderPhone(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetPSPermitHolderPhone(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetPSPermitHolderPhone(i, u_p1.GetPtr());
 		}
 
 		public void SetPSPermitHolderEmail(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetPSPermitHolderEmail(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetPSPermitHolderEmail(i, u_p1.GetPtr());
 		}
 
 		public void SetPSPermitHolderListName(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetPSPermitHolderListName(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetPSPermitHolderListName(i, u_p1.GetPtr());
 		}
 
 		public void SetPSPermitHolderZIP(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetPSPermitHolderZIP(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetPSPermitHolderZIP(i, u_p1.GetPtr());
 		}
 
 		public void SetPSPostOfficeOfMailingCity(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetPSPostOfficeOfMailingCity(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetPSPostOfficeOfMailingCity(i, u_p1.GetPtr());
 		}
 
 		public void SetPSPostOfficeOfMailingState(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetPSPostOfficeOfMailingState(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetPSPostOfficeOfMailingState(i, u_p1.GetPtr());
 		}
 
 		public void SetPSPostOfficeOfMailingZIP(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetPSPostOfficeOfMailingZIP(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetPSPostOfficeOfMailingZIP(i, u_p1.GetPtr());
 		}
 
 		public void SetPSMailingAgentName(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetPSMailingAgentName(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetPSMailingAgentName(i, u_p1.GetPtr());
 		}
 
 		public void SetPSMailingAgentCompany(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetPSMailingAgentCompany(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetPSMailingAgentCompany(i, u_p1.GetPtr());
 		}
 
 		public void SetPSMailingAgentStreet(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetPSMailingAgentStreet(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetPSMailingAgentStreet(i, u_p1.GetPtr());
 		}
 
 		public void SetPSMailingAgentCity(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetPSMailingAgentCity(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetPSMailingAgentCity(i, u_p1.GetPtr());
 		}
 
 		public void SetPSMailingAgentState(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetPSMailingAgentState(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetPSMailingAgentState(i, u_p1.GetPtr());
 		}
 
 		public void SetPSMailingAgentPhone(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetPSMailingAgentPhone(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetPSMailingAgentPhone(i, u_p1.GetPtr());
 		}
 
 		public void SetPSMailingAgentZIP(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetPSMailingAgentZIP(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetPSMailingAgentZIP(i, u_p1.GetPtr());
 		}
 
 		public void SetPSIndividualOrOrganizationName(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetPSIndividualOrOrganizationName(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetPSIndividualOrOrganizationName(i, u_p1.GetPtr());
 		}
 
 		public void SetPSIndividualOrOrganizationCompany(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetPSIndividualOrOrganizationCompany(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetPSIndividualOrOrganizationCompany(i, u_p1.GetPtr());
 		}
 
 		public void SetPSIndividualOrOrganizationStreet(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetPSIndividualOrOrganizationStreet(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetPSIndividualOrOrganizationStreet(i, u_p1.GetPtr());
 		}
 
 		public void SetPSIndividualOrOrganizationCity(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetPSIndividualOrOrganizationCity(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetPSIndividualOrOrganizationCity(i, u_p1.GetPtr());
 		}
 
 		public void SetPSIndividualOrOrganizationState(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetPSIndividualOrOrganizationState(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetPSIndividualOrOrganizationState(i, u_p1.GetPtr());
 		}
 
 		public void SetPSIndividualOrOrganizationZIP(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetPSIndividualOrOrganizationZIP(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetPSIndividualOrOrganizationZIP(i, u_p1.GetPtr());
 		}
 
 		public void SetPSIndividualOrOrganizationCRID(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetPSIndividualOrOrganizationCRID(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetPSIndividualOrOrganizationCRID(i, u_p1.GetPtr());
 		}
 
 		public void SetContinueContainerNumber(bool p1) {
@@ -1184,53 +1184,53 @@ namespace MelissaData {
 		}
 
 		public void SetPSStatementSeqNumber(string val) {
-			Utf8String u_val = new Utf8String(val);
-			mdPresortUnmanaged.mdPresortSetPSStatementSeqNumber(i, u_val.GetUtf8Ptr());
+			EncodedString u_val = new EncodedString(val);
+			mdPresortUnmanaged.mdPresortSetPSStatementSeqNumber(i, u_val.GetPtr());
 		}
 
 		public void SetPSMailingDate(string val) {
-			Utf8String u_val = new Utf8String(val);
-			mdPresortUnmanaged.mdPresortSetPSMailingDate(i, u_val.GetUtf8Ptr());
+			EncodedString u_val = new EncodedString(val);
+			mdPresortUnmanaged.mdPresortSetPSMailingDate(i, u_val.GetPtr());
 		}
 
 		public void SetPSFedAgencyCode(string val) {
-			Utf8String u_val = new Utf8String(val);
-			mdPresortUnmanaged.mdPresortSetPSFedAgencyCode(i, u_val.GetUtf8Ptr());
+			EncodedString u_val = new EncodedString(val);
+			mdPresortUnmanaged.mdPresortSetPSFedAgencyCode(i, u_val.GetPtr());
 		}
 
 		public void SetPSCustomerNumber(string val) {
-			Utf8String u_val = new Utf8String(val);
-			mdPresortUnmanaged.mdPresortSetPSCustomerNumber(i, u_val.GetUtf8Ptr());
+			EncodedString u_val = new EncodedString(val);
+			mdPresortUnmanaged.mdPresortSetPSCustomerNumber(i, u_val.GetPtr());
 		}
 
 		public void SetPSCAPSNumber(string val) {
-			Utf8String u_val = new Utf8String(val);
-			mdPresortUnmanaged.mdPresortSetPSCAPSNumber(i, u_val.GetUtf8Ptr());
+			EncodedString u_val = new EncodedString(val);
+			mdPresortUnmanaged.mdPresortSetPSCAPSNumber(i, u_val.GetPtr());
 		}
 
 		public void SetPermitNumber(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetPermitNumber(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetPermitNumber(i, u_p1.GetPtr());
 		}
 
 		public void SetPSNonProfitAuthNumber(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetPSNonProfitAuthNumber(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetPSNonProfitAuthNumber(i, u_p1.GetPtr());
 		}
 
 		public void SetMailClass(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetMailClass(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetMailClass(i, u_p1.GetPtr());
 		}
 
 		public void SetPieceType(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetPieceType(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetPieceType(i, u_p1.GetPtr());
 		}
 
 		public void SetSortType(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetSortType(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetSortType(i, u_p1.GetPtr());
 		}
 
 		public void SetFCM_CRRT(bool p1) {
@@ -1270,38 +1270,38 @@ namespace MelissaData {
 		}
 
 		public void SetRecordID(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetRecordID(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetRecordID(i, u_p1.GetPtr());
 		}
 
 		public void SetSackWeight(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetSackWeight(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetSackWeight(i, u_p1.GetPtr());
 		}
 
 		public void SetPieceLength(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetPieceLength(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetPieceLength(i, u_p1.GetPtr());
 		}
 
 		public void SetPieceHeight(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetPieceHeight(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetPieceHeight(i, u_p1.GetPtr());
 		}
 
 		public void SetPieceThickness(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetPieceThickness(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetPieceThickness(i, u_p1.GetPtr());
 		}
 
 		public void SetPieceWeight(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetPieceWeight(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetPieceWeight(i, u_p1.GetPtr());
 		}
 
 		public void SetPackageSize(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetPackageSize(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetPackageSize(i, u_p1.GetPtr());
 		}
 
 		public void SetEnableCoTray(bool p1) {
@@ -1321,13 +1321,13 @@ namespace MelissaData {
 		}
 
 		public void SetMailersID(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetMailersID(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetMailersID(i, u_p1.GetPtr());
 		}
 
 		public bool SetPSPrecanceledStampValue(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			return (mdPresortUnmanaged.mdPresortSetPSPrecanceledStampValue(i, u_p1.GetUtf8Ptr()) != 0);
+			EncodedString u_p1 = new EncodedString(p1);
+			return (mdPresortUnmanaged.mdPresortSetPSPrecanceledStampValue(i, u_p1.GetPtr()) != 0);
 		}
 
 		public void SetPSPresortResidualPieces(bool p1) {
@@ -1335,8 +1335,8 @@ namespace MelissaData {
 		}
 
 		public void SetIMBSerialNumber(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetIMBSerialNumber(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetIMBSerialNumber(i, u_p1.GetPtr());
 		}
 
 		public void SetPSPolicitalCampaignMailing(bool p1) {
@@ -1348,24 +1348,24 @@ namespace MelissaData {
 		}
 
 		public bool ProduceReports(string p1, string p2) {
-			Utf8String u_p1 = new Utf8String(p1);
-			Utf8String u_p2 = new Utf8String(p2);
-			return (mdPresortUnmanaged.mdPresortProduceReports(i, u_p1.GetUtf8Ptr(), u_p2.GetUtf8Ptr()) != 0);
+			EncodedString u_p1 = new EncodedString(p1);
+			EncodedString u_p2 = new EncodedString(p2);
+			return (mdPresortUnmanaged.mdPresortProduceReports(i, u_p1.GetPtr(), u_p2.GetPtr()) != 0);
 		}
 
 		public void SetSCFCity(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetSCFCity(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetSCFCity(i, u_p1.GetPtr());
 		}
 
 		public void SetSCFState(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetSCFState(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetSCFState(i, u_p1.GetPtr());
 		}
 
 		public void SetSCFZip(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetSCFZip(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetSCFZip(i, u_p1.GetPtr());
 		}
 
 		public bool AddSCF() {
@@ -1373,18 +1373,18 @@ namespace MelissaData {
 		}
 
 		public void SetNDCCity(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetNDCCity(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetNDCCity(i, u_p1.GetPtr());
 		}
 
 		public void SetNDCState(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetNDCState(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetNDCState(i, u_p1.GetPtr());
 		}
 
 		public void SetNDCZip(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetNDCZip(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetNDCZip(i, u_p1.GetPtr());
 		}
 
 		public bool AddNDC() {
@@ -1392,23 +1392,23 @@ namespace MelissaData {
 		}
 
 		public void SetDDUCity(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetDDUCity(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetDDUCity(i, u_p1.GetPtr());
 		}
 
 		public void SetDDUState(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetDDUState(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetDDUState(i, u_p1.GetPtr());
 		}
 
 		public void SetDDUZip(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetDDUZip(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetDDUZip(i, u_p1.GetPtr());
 		}
 
 		public void SetDDUMoreZip(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetDDUMoreZip(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetDDUMoreZip(i, u_p1.GetPtr());
 		}
 
 		public bool AddDDU() {
@@ -1432,28 +1432,28 @@ namespace MelissaData {
 		}
 
 		public void SetTTOther(string val2) {
-			Utf8String u_val2 = new Utf8String(val2);
-			mdPresortUnmanaged.mdPresortSetTTOther(i, u_val2.GetUtf8Ptr());
+			EncodedString u_val2 = new EncodedString(val2);
+			mdPresortUnmanaged.mdPresortSetTTOther(i, u_val2.GetPtr());
 		}
 
 		public void SetTTParameterPositionX(string val) {
-			Utf8String u_val = new Utf8String(val);
-			mdPresortUnmanaged.mdPresortSetTTParameterPositionX(i, u_val.GetUtf8Ptr());
+			EncodedString u_val = new EncodedString(val);
+			mdPresortUnmanaged.mdPresortSetTTParameterPositionX(i, u_val.GetPtr());
 		}
 
 		public void SetTTParameterPositionY(string val) {
-			Utf8String u_val = new Utf8String(val);
-			mdPresortUnmanaged.mdPresortSetTTParameterPositionY(i, u_val.GetUtf8Ptr());
+			EncodedString u_val = new EncodedString(val);
+			mdPresortUnmanaged.mdPresortSetTTParameterPositionY(i, u_val.GetPtr());
 		}
 
 		public void SetTTParameterWidth(string val) {
-			Utf8String u_val = new Utf8String(val);
-			mdPresortUnmanaged.mdPresortSetTTParameterWidth(i, u_val.GetUtf8Ptr());
+			EncodedString u_val = new EncodedString(val);
+			mdPresortUnmanaged.mdPresortSetTTParameterWidth(i, u_val.GetPtr());
 		}
 
 		public void SetTTParameterHeight(string val) {
-			Utf8String u_val = new Utf8String(val);
-			mdPresortUnmanaged.mdPresortSetTTParameterHeight(i, u_val.GetUtf8Ptr());
+			EncodedString u_val = new EncodedString(val);
+			mdPresortUnmanaged.mdPresortSetTTParameterHeight(i, u_val.GetPtr());
 		}
 
 		public bool DoPresort() {
@@ -1465,7 +1465,7 @@ namespace MelissaData {
 		}
 
 		public string SetPreSortSettings(int p1) {
-			return Utf8String.GetUnicodeString(mdPresortUnmanaged.mdPresortSetPreSortSettings(i, p1));
+			return EncodedString.GetEncodedString(mdPresortUnmanaged.mdPresortSetPreSortSettings(i, p1));
 		}
 
 		public bool SetACSCodeSettings(int p1) {
@@ -1481,8 +1481,8 @@ namespace MelissaData {
 		}
 
 		public bool GetRecord(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			return (mdPresortUnmanaged.mdPresortGetRecord(i, u_p1.GetUtf8Ptr()) != 0);
+			EncodedString u_p1 = new EncodedString(p1);
+			return (mdPresortUnmanaged.mdPresortGetRecord(i, u_p1.GetPtr()) != 0);
 		}
 
 		public bool GetFirstRecord() {
@@ -1494,11 +1494,11 @@ namespace MelissaData {
 		}
 
 		public string GetMailPieceRate() {
-			return Utf8String.GetUnicodeString(mdPresortUnmanaged.mdPresortGetMailPieceRate(i));
+			return EncodedString.GetEncodedString(mdPresortUnmanaged.mdPresortGetMailPieceRate(i));
 		}
 
 		public string GetZipAsString() {
-			return Utf8String.GetUnicodeString(mdPresortUnmanaged.mdPresortGetZipAsString(i));
+			return EncodedString.GetEncodedString(mdPresortUnmanaged.mdPresortGetZipAsString(i));
 		}
 
 		public int GetTrayNumber() {
@@ -1510,63 +1510,63 @@ namespace MelissaData {
 		}
 
 		public string GetRecordID() {
-			return Utf8String.GetUnicodeString(mdPresortUnmanaged.mdPresortGetRecordID(i));
+			return EncodedString.GetEncodedString(mdPresortUnmanaged.mdPresortGetRecordID(i));
 		}
 
 		public string GetEndorsementLine() {
-			return Utf8String.GetUnicodeString(mdPresortUnmanaged.mdPresortGetEndorsementLine(i));
+			return EncodedString.GetEncodedString(mdPresortUnmanaged.mdPresortGetEndorsementLine(i));
 		}
 
 		public string GetRateCode() {
-			return Utf8String.GetUnicodeString(mdPresortUnmanaged.mdPresortGetRateCode(i));
+			return EncodedString.GetEncodedString(mdPresortUnmanaged.mdPresortGetRateCode(i));
 		}
 
 		public string GetMailJob() {
-			return Utf8String.GetUnicodeString(mdPresortUnmanaged.mdPresortGetMailJob(i));
+			return EncodedString.GetEncodedString(mdPresortUnmanaged.mdPresortGetMailJob(i));
 		}
 
 		public string GetSortLevel() {
-			return Utf8String.GetUnicodeString(mdPresortUnmanaged.mdPresortGetSortLevel(i));
+			return EncodedString.GetEncodedString(mdPresortUnmanaged.mdPresortGetSortLevel(i));
 		}
 
 		public string GetLabelLine1() {
-			return Utf8String.GetUnicodeString(mdPresortUnmanaged.mdPresortGetLabelLine1(i));
+			return EncodedString.GetEncodedString(mdPresortUnmanaged.mdPresortGetLabelLine1(i));
 		}
 
 		public string GetLabelLine2() {
-			return Utf8String.GetUnicodeString(mdPresortUnmanaged.mdPresortGetLabelLine2(i));
+			return EncodedString.GetEncodedString(mdPresortUnmanaged.mdPresortGetLabelLine2(i));
 		}
 
 		public string GetLabelList() {
-			return Utf8String.GetUnicodeString(mdPresortUnmanaged.mdPresortGetLabelList(i));
+			return EncodedString.GetEncodedString(mdPresortUnmanaged.mdPresortGetLabelList(i));
 		}
 
 		public string GetCINCode() {
-			return Utf8String.GetUnicodeString(mdPresortUnmanaged.mdPresortGetCINCode(i));
+			return EncodedString.GetEncodedString(mdPresortUnmanaged.mdPresortGetCINCode(i));
 		}
 
 		public string GetTrayProcessingCode() {
-			return Utf8String.GetUnicodeString(mdPresortUnmanaged.mdPresortGetTrayProcessingCode(i));
+			return EncodedString.GetEncodedString(mdPresortUnmanaged.mdPresortGetTrayProcessingCode(i));
 		}
 
 		public string GetMailSplitCode() {
-			return Utf8String.GetUnicodeString(mdPresortUnmanaged.mdPresortGetMailSplitCode(i));
+			return EncodedString.GetEncodedString(mdPresortUnmanaged.mdPresortGetMailSplitCode(i));
 		}
 
 		public string GetTrayZipCode() {
-			return Utf8String.GetUnicodeString(mdPresortUnmanaged.mdPresortGetTrayZipCode(i));
+			return EncodedString.GetEncodedString(mdPresortUnmanaged.mdPresortGetTrayZipCode(i));
 		}
 
 		public string GetTrayType() {
-			return Utf8String.GetUnicodeString(mdPresortUnmanaged.mdPresortGetTrayType(i));
+			return EncodedString.GetEncodedString(mdPresortUnmanaged.mdPresortGetTrayType(i));
 		}
 
 		public string GetBundleZipCode() {
-			return Utf8String.GetUnicodeString(mdPresortUnmanaged.mdPresortGetBundleZipCode(i));
+			return EncodedString.GetEncodedString(mdPresortUnmanaged.mdPresortGetBundleZipCode(i));
 		}
 
 		public string GetBundleSortLevel() {
-			return Utf8String.GetUnicodeString(mdPresortUnmanaged.mdPresortGetBundleSortLevel(i));
+			return EncodedString.GetEncodedString(mdPresortUnmanaged.mdPresortGetBundleSortLevel(i));
 		}
 
 		public int GetBundleNumber() {
@@ -1574,19 +1574,19 @@ namespace MelissaData {
 		}
 
 		public string GetBundleIndicator() {
-			return Utf8String.GetUnicodeString(mdPresortUnmanaged.mdPresortGetBundleIndicator(i));
+			return EncodedString.GetEncodedString(mdPresortUnmanaged.mdPresortGetBundleIndicator(i));
 		}
 
 		public string GetZipCodeInScheme() {
-			return Utf8String.GetUnicodeString(mdPresortUnmanaged.mdPresortGetZipCodeInScheme(i));
+			return EncodedString.GetEncodedString(mdPresortUnmanaged.mdPresortGetZipCodeInScheme(i));
 		}
 
 		public string GetBarcodeID() {
-			return Utf8String.GetUnicodeString(mdPresortUnmanaged.mdPresortGetBarcodeID(i));
+			return EncodedString.GetEncodedString(mdPresortUnmanaged.mdPresortGetBarcodeID(i));
 		}
 
 		public string GetServiceTypeID() {
-			return Utf8String.GetUnicodeString(mdPresortUnmanaged.mdPresortGetServiceTypeID(i));
+			return EncodedString.GetEncodedString(mdPresortUnmanaged.mdPresortGetServiceTypeID(i));
 		}
 
 		public bool SetProducePallets(bool p1) {
@@ -1602,19 +1602,19 @@ namespace MelissaData {
 		}
 
 		public string GetPalletZipCode() {
-			return Utf8String.GetUnicodeString(mdPresortUnmanaged.mdPresortGetPalletZipCode(i));
+			return EncodedString.GetEncodedString(mdPresortUnmanaged.mdPresortGetPalletZipCode(i));
 		}
 
 		public string GetPalletLabelLine1() {
-			return Utf8String.GetUnicodeString(mdPresortUnmanaged.mdPresortGetPalletLabelLine1(i));
+			return EncodedString.GetEncodedString(mdPresortUnmanaged.mdPresortGetPalletLabelLine1(i));
 		}
 
 		public string GetPalletLabelLine2() {
-			return Utf8String.GetUnicodeString(mdPresortUnmanaged.mdPresortGetPalletLabelLine2(i));
+			return EncodedString.GetEncodedString(mdPresortUnmanaged.mdPresortGetPalletLabelLine2(i));
 		}
 
 		public string GetPalletSortLevel() {
-			return Utf8String.GetUnicodeString(mdPresortUnmanaged.mdPresortGetPalletSortLevel(i));
+			return EncodedString.GetEncodedString(mdPresortUnmanaged.mdPresortGetPalletSortLevel(i));
 		}
 
 		public int GetPalletNumber() {
@@ -1778,12 +1778,12 @@ namespace MelissaData {
 		}
 
 		public string GetDropShipZipPlus4() {
-			return Utf8String.GetUnicodeString(mdPresortUnmanaged.mdPresortGetDropShipZipPlus4(i));
+			return EncodedString.GetEncodedString(mdPresortUnmanaged.mdPresortGetDropShipZipPlus4(i));
 		}
 
 		public string Get(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			return Utf8String.GetUnicodeString(mdPresortUnmanaged.mdPresortGet(i, u_p1.GetUtf8Ptr()));
+			EncodedString u_p1 = new EncodedString(p1);
+			return EncodedString.GetEncodedString(mdPresortUnmanaged.mdPresortGet(i, u_p1.GetPtr()));
 		}
 
 		public int GetTotalNonAutoPieces() {
@@ -1911,18 +1911,18 @@ namespace MelissaData {
 		}
 
 		public bool GetDestSCFInfo(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			return (mdPresortUnmanaged.mdPresortGetDestSCFInfo(i, u_p1.GetUtf8Ptr()) != 0);
+			EncodedString u_p1 = new EncodedString(p1);
+			return (mdPresortUnmanaged.mdPresortGetDestSCFInfo(i, u_p1.GetPtr()) != 0);
 		}
 
 		public bool GetDestNDCInfo(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			return (mdPresortUnmanaged.mdPresortGetDestNDCInfo(i, u_p1.GetUtf8Ptr()) != 0);
+			EncodedString u_p1 = new EncodedString(p1);
+			return (mdPresortUnmanaged.mdPresortGetDestNDCInfo(i, u_p1.GetPtr()) != 0);
 		}
 
 		public bool GetDestDDUInfo(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			return (mdPresortUnmanaged.mdPresortGetDestDDUInfo(i, u_p1.GetUtf8Ptr()) != 0);
+			EncodedString u_p1 = new EncodedString(p1);
+			return (mdPresortUnmanaged.mdPresortGetDestDDUInfo(i, u_p1.GetPtr()) != 0);
 		}
 
 		public int GetDestContainersTotal(int p1) {
@@ -1942,93 +1942,93 @@ namespace MelissaData {
 		}
 
 		public void SetTwoFtTrayMaximum(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetTwoFtTrayMaximum(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetTwoFtTrayMaximum(i, u_p1.GetPtr());
 		}
 
 		public void SetTwoFtTrayMinimum(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetTwoFtTrayMinimum(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetTwoFtTrayMinimum(i, u_p1.GetPtr());
 		}
 
 		public void SetOneFtTrayMaximum(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetOneFtTrayMaximum(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetOneFtTrayMaximum(i, u_p1.GetPtr());
 		}
 
 		public void SetOneFtTrayMinimum(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetOneFtTrayMinimum(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetOneFtTrayMinimum(i, u_p1.GetPtr());
 		}
 
 		public void SetBundleMaximum(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetBundleMaximum(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetBundleMaximum(i, u_p1.GetPtr());
 		}
 
 		public bool SetPSSCFZipAutomationSort(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			return (mdPresortUnmanaged.mdPresortSetPSSCFZipAutomationSort(i, u_p1.GetUtf8Ptr()) != 0);
+			EncodedString u_p1 = new EncodedString(p1);
+			return (mdPresortUnmanaged.mdPresortSetPSSCFZipAutomationSort(i, u_p1.GetPtr()) != 0);
 		}
 
 		public bool SetPSSCFZipNonAutomationSort(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			return (mdPresortUnmanaged.mdPresortSetPSSCFZipNonAutomationSort(i, u_p1.GetUtf8Ptr()) != 0);
+			EncodedString u_p1 = new EncodedString(p1);
+			return (mdPresortUnmanaged.mdPresortSetPSSCFZipNonAutomationSort(i, u_p1.GetPtr()) != 0);
 		}
 
 		public bool SetPSSCFZipECRRTSort(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			return (mdPresortUnmanaged.mdPresortSetPSSCFZipECRRTSort(i, u_p1.GetUtf8Ptr()) != 0);
+			EncodedString u_p1 = new EncodedString(p1);
+			return (mdPresortUnmanaged.mdPresortSetPSSCFZipECRRTSort(i, u_p1.GetPtr()) != 0);
 		}
 
 		public bool SetPSSCFZipCoSack(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			return (mdPresortUnmanaged.mdPresortSetPSSCFZipCoSack(i, u_p1.GetUtf8Ptr()) != 0);
+			EncodedString u_p1 = new EncodedString(p1);
+			return (mdPresortUnmanaged.mdPresortSetPSSCFZipCoSack(i, u_p1.GetPtr()) != 0);
 		}
 
 		public bool SetPSNDCZipAutomationSort(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			return (mdPresortUnmanaged.mdPresortSetPSNDCZipAutomationSort(i, u_p1.GetUtf8Ptr()) != 0);
+			EncodedString u_p1 = new EncodedString(p1);
+			return (mdPresortUnmanaged.mdPresortSetPSNDCZipAutomationSort(i, u_p1.GetPtr()) != 0);
 		}
 
 		public bool SetPSNDCZipNonAutomationSort(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			return (mdPresortUnmanaged.mdPresortSetPSNDCZipNonAutomationSort(i, u_p1.GetUtf8Ptr()) != 0);
+			EncodedString u_p1 = new EncodedString(p1);
+			return (mdPresortUnmanaged.mdPresortSetPSNDCZipNonAutomationSort(i, u_p1.GetPtr()) != 0);
 		}
 
 		public bool SetPSNDCZipECRRTSort(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			return (mdPresortUnmanaged.mdPresortSetPSNDCZipECRRTSort(i, u_p1.GetUtf8Ptr()) != 0);
+			EncodedString u_p1 = new EncodedString(p1);
+			return (mdPresortUnmanaged.mdPresortSetPSNDCZipECRRTSort(i, u_p1.GetPtr()) != 0);
 		}
 
 		public bool SetPSNDCZipCoSack(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			return (mdPresortUnmanaged.mdPresortSetPSNDCZipCoSack(i, u_p1.GetUtf8Ptr()) != 0);
+			EncodedString u_p1 = new EncodedString(p1);
+			return (mdPresortUnmanaged.mdPresortSetPSNDCZipCoSack(i, u_p1.GetPtr()) != 0);
 		}
 
 		public bool SetPSDDUZipECRRTSort(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			return (mdPresortUnmanaged.mdPresortSetPSDDUZipECRRTSort(i, u_p1.GetUtf8Ptr()) != 0);
+			EncodedString u_p1 = new EncodedString(p1);
+			return (mdPresortUnmanaged.mdPresortSetPSDDUZipECRRTSort(i, u_p1.GetPtr()) != 0);
 		}
 
 		public bool SetPSPOMZipAutomationSort(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			return (mdPresortUnmanaged.mdPresortSetPSPOMZipAutomationSort(i, u_p1.GetUtf8Ptr()) != 0);
+			EncodedString u_p1 = new EncodedString(p1);
+			return (mdPresortUnmanaged.mdPresortSetPSPOMZipAutomationSort(i, u_p1.GetPtr()) != 0);
 		}
 
 		public bool SetPSPOMZipNonAutomationSort(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			return (mdPresortUnmanaged.mdPresortSetPSPOMZipNonAutomationSort(i, u_p1.GetUtf8Ptr()) != 0);
+			EncodedString u_p1 = new EncodedString(p1);
+			return (mdPresortUnmanaged.mdPresortSetPSPOMZipNonAutomationSort(i, u_p1.GetPtr()) != 0);
 		}
 
 		public bool SetPSPOMZipECRRTSort(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			return (mdPresortUnmanaged.mdPresortSetPSPOMZipECRRTSort(i, u_p1.GetUtf8Ptr()) != 0);
+			EncodedString u_p1 = new EncodedString(p1);
+			return (mdPresortUnmanaged.mdPresortSetPSPOMZipECRRTSort(i, u_p1.GetPtr()) != 0);
 		}
 
 		public bool SetPSPOMZipCoSack(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			return (mdPresortUnmanaged.mdPresortSetPSPOMZipCoSack(i, u_p1.GetUtf8Ptr()) != 0);
+			EncodedString u_p1 = new EncodedString(p1);
+			return (mdPresortUnmanaged.mdPresortSetPSPOMZipCoSack(i, u_p1.GetPtr()) != 0);
 		}
 
 		public void SetPSIncludeResidualPieces(bool p1) {
@@ -2056,30 +2056,30 @@ namespace MelissaData {
 		}
 
 		public string GetIMBNumericCode() {
-			return Utf8String.GetUnicodeString(mdPresortUnmanaged.mdPresortGetIMBNumericCode(i));
+			return EncodedString.GetEncodedString(mdPresortUnmanaged.mdPresortGetIMBNumericCode(i));
 		}
 
 		public string GetIMBAlphaCode() {
-			return Utf8String.GetUnicodeString(mdPresortUnmanaged.mdPresortGetIMBAlphaCode(i));
+			return EncodedString.GetEncodedString(mdPresortUnmanaged.mdPresortGetIMBAlphaCode(i));
 		}
 
 		public string GetIMBSerialNumber() {
-			return Utf8String.GetUnicodeString(mdPresortUnmanaged.mdPresortGetIMBSerialNumber(i));
+			return EncodedString.GetEncodedString(mdPresortUnmanaged.mdPresortGetIMBSerialNumber(i));
 		}
 
 		public void SetPSMailingAgentCRID(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetPSMailingAgentCRID(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetPSMailingAgentCRID(i, u_p1.GetPtr());
 		}
 
 		public bool SetContainerSequenceNumber(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			return (mdPresortUnmanaged.mdPresortSetContainerSequenceNumber(i, u_p1.GetUtf8Ptr()) != 0);
+			EncodedString u_p1 = new EncodedString(p1);
+			return (mdPresortUnmanaged.mdPresortSetContainerSequenceNumber(i, u_p1.GetPtr()) != 0);
 		}
 
 		public void SetPSNonProfitAuthNumberMO(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetPSNonProfitAuthNumberMO(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetPSNonProfitAuthNumberMO(i, u_p1.GetPtr());
 		}
 
 		public bool SetProduceDropShipForms(bool p1) {
@@ -2091,300 +2091,301 @@ namespace MelissaData {
 		}
 
 		public bool ProduceMailDatFiles(string p1, string p2) {
-			Utf8String u_p1 = new Utf8String(p1);
-			Utf8String u_p2 = new Utf8String(p2);
-			return (mdPresortUnmanaged.mdPresortProduceMailDatFiles(i, u_p1.GetUtf8Ptr(), u_p2.GetUtf8Ptr()) != 0);
+			EncodedString u_p1 = new EncodedString(p1);
+			EncodedString u_p2 = new EncodedString(p2);
+			return (mdPresortUnmanaged.mdPresortProduceMailDatFiles(i, u_p1.GetPtr(), u_p2.GetPtr()) != 0);
 		}
 
 		public void SetPSPostOfficeOfMailingPlus4(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetPSPostOfficeOfMailingPlus4(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetPSPostOfficeOfMailingPlus4(i, u_p1.GetPtr());
 		}
 
 		public void SetMDACSKeyLineData(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetMDACSKeyLineData(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetMDACSKeyLineData(i, u_p1.GetPtr());
 		}
 
 		public void SetMDMachineID(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetMDMachineID(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetMDMachineID(i, u_p1.GetPtr());
 		}
 
 		public void SetMDJobID(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetMDJobID(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetMDJobID(i, u_p1.GetPtr());
 		}
 
 		public void SetMDHDRIDEAllianceVersion(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetMDHDRIDEAllianceVersion(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetMDHDRIDEAllianceVersion(i, u_p1.GetPtr());
 		}
 
 		public void SetMDHDRHistorySequenceNumber(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetMDHDRHistorySequenceNumber(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetMDHDRHistorySequenceNumber(i, u_p1.GetPtr());
 		}
 
 		public void SetMDHDRHistoryStatus(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetMDHDRHistoryStatus(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetMDHDRHistoryStatus(i, u_p1.GetPtr());
 		}
 
 		public void SetMDHDRHistoricalJobID(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetMDHDRHistoricalJobID(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetMDHDRHistoricalJobID(i, u_p1.GetPtr());
 		}
 
 		public void SetMDHDRLicensedUsersJobNumber(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetMDHDRLicensedUsersJobNumber(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetMDHDRLicensedUsersJobNumber(i, u_p1.GetPtr());
 		}
 
 		public void SetMDHDRJobNameTitleIssue(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetMDHDRJobNameTitleIssue(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetMDHDRJobNameTitleIssue(i, u_p1.GetPtr());
 		}
 
 		public void SetMDHDRFileSource(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetMDHDRFileSource(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetMDHDRFileSource(i, u_p1.GetPtr());
 		}
 
 		public void SetMDHDRUserLicenseCode(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetMDHDRUserLicenseCode(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetMDHDRUserLicenseCode(i, u_p1.GetPtr());
 		}
 
 		public void SetMDHDRMailDatSoftwareVendorName(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetMDHDRMailDatSoftwareVendorName(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetMDHDRMailDatSoftwareVendorName(i, u_p1.GetPtr());
 		}
 
 		public void SetMDHDRMailDatSoftwareProductsName(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetMDHDRMailDatSoftwareProductsName(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetMDHDRMailDatSoftwareProductsName(i, u_p1.GetPtr());
 		}
 
 		public void SetMDHDRMailDatSoftwareVersion(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetMDHDRMailDatSoftwareVersion(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetMDHDRMailDatSoftwareVersion(i, u_p1.GetPtr());
 		}
 
 		public void SetMDHDRMailDatSoftwareVendorEmail(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetMDHDRMailDatSoftwareVendorEmail(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetMDHDRMailDatSoftwareVendorEmail(i, u_p1.GetPtr());
 		}
 
 		public void SetMDHDReDocSenderCRID(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetMDHDReDocSenderCRID(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetMDHDReDocSenderCRID(i, u_p1.GetPtr());
 		}
 
 		public void SetMDSEGVerificationFacilityName(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetMDSEGVerificationFacilityName(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetMDSEGVerificationFacilityName(i, u_p1.GetPtr());
 		}
 
 		public void SetMDSEGVerificationFacilityZipPlus4(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetMDSEGVerificationFacilityZipPlus4(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetMDSEGVerificationFacilityZipPlus4(i, u_p1.GetPtr());
 		}
 
 		public void SetMDHDROriginalSoftwareVendorName(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetMDHDROriginalSoftwareVendorName(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetMDHDROriginalSoftwareVendorName(i, u_p1.GetPtr());
 		}
 
 		public void SetMDHDROriginalSoftwareProductsName(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetMDHDROriginalSoftwareProductsName(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetMDHDROriginalSoftwareProductsName(i, u_p1.GetPtr());
 		}
 
 		public void SetMDHDROriginalSoftwareVersion(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetMDHDROriginalSoftwareVersion(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetMDHDROriginalSoftwareVersion(i, u_p1.GetPtr());
 		}
 
 		public void SetMDHDROriginalSoftwareVendorEmail(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetMDHDROriginalSoftwareVendorEmail(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetMDHDROriginalSoftwareVendorEmail(i, u_p1.GetPtr());
 		}
 
 		public void SetMDHDRContactName(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetMDHDRContactName(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetMDHDRContactName(i, u_p1.GetPtr());
 		}
 
 		public void SetMDHDRContactPhone(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetMDHDRContactPhone(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetMDHDRContactPhone(i, u_p1.GetPtr());
 		}
 
 		public void SetMDHDRContactEMail(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetMDHDRContactEMail(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetMDHDRContactEMail(i, u_p1.GetPtr());
 		}
 
 		public void SetMDCPTMailOwnerID(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetMDCPTMailOwnerID(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetMDCPTMailOwnerID(i, u_p1.GetPtr());
 		}
 
 		public void SetMDCPTOwnerCRID(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetMDCPTOwnerCRID(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetMDCPTOwnerCRID(i, u_p1.GetPtr());
 		}
 
 		public void SetMDCPTMailOwnersMailingRefID(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetMDCPTMailOwnersMailingRefID(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetMDCPTMailOwnersMailingRefID(i, u_p1.GetPtr());
 		}
 
 		public void SetMDCPTPostalPriceIncID(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetMDCPTPostalPriceIncID(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetMDCPTPostalPriceIncID(i, u_p1.GetPtr());
 		}
 
 		public void SetMDCPTPostalPriceIncType(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetMDCPTPostalPriceIncType(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetMDCPTPostalPriceIncType(i, u_p1.GetPtr());
 		}
 
 		public void SetMDCPTStandParcelType(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetMDCPTStandParcelType(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetMDCPTStandParcelType(i, u_p1.GetPtr());
 		}
 
 		public void SetMDCPTStandFlatType(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetMDCPTStandFlatType(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetMDCPTStandFlatType(i, u_p1.GetPtr());
 		}
 
 		public void SetMDCPTUserOptField(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetMDCPTUserOptField(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetMDCPTUserOptField(i, u_p1.GetPtr());
 		}
 
 		public void SetMDCPTContentOfMail(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetMDCPTContentOfMail(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetMDCPTContentOfMail(i, u_p1.GetPtr());
 		}
 
 		public void SetMDCSMCSAAgreementID(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetMDCSMCSAAgreementID(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetMDCSMCSAAgreementID(i, u_p1.GetPtr());
 		}
 
 		public void SetMDSEGDescription(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetMDSEGDescription(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetMDSEGDescription(i, u_p1.GetPtr());
 		}
 
 		public void SetMDCPTComDescription(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetMDCPTComDescription(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetMDCPTComDescription(i, u_p1.GetPtr());
 		}
 
 		public void SetMDMPUName(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetMDMPUName(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetMDMPUName(i, u_p1.GetPtr());
 		}
 
 		public void SetMDMPUDescription(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetMDMPUDescription(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetMDMPUDescription(i, u_p1.GetPtr());
 		}
 
 		public void SetMDMPADescription(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetMDMPADescription(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetMDMPADescription(i, u_p1.GetPtr());
 		}
 
 		public void SetMDMPAMailingAgentMailerID(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetMDMPAMailingAgentMailerID(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetMDMPAMailingAgentMailerID(i, u_p1.GetPtr());
 		}
 
 		public void SetMDMPAMailOwnerPermitNumber(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetMDMPAMailOwnerPermitNumber(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetMDMPAMailOwnerPermitNumber(i, u_p1.GetPtr());
 		}
 
 		public void SetMDMPAMailOwnerPermitType(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetMDMPAMailOwnerPermitType(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetMDMPAMailOwnerPermitType(i, u_p1.GetPtr());
 		}
 
 		public void SetMDMPAAdditionalPostagePaymentMethod(string val) {
-			Utf8String u_val = new Utf8String(val);
-			mdPresortUnmanaged.mdPresortSetMDMPAAdditionalPostagePaymentMethod(i, u_val.GetUtf8Ptr());
+			EncodedString u_val = new EncodedString(val);
+			mdPresortUnmanaged.mdPresortSetMDMPAAdditionalPostagePaymentMethod(i, u_val.GetPtr());
 		}
 
 		public void SetMDMPAAdditionalPaymentPermitNumber(string val) {
-			Utf8String u_val = new Utf8String(val);
-			mdPresortUnmanaged.mdPresortSetMDMPAAdditionalPaymentPermitNumber(i, u_val.GetUtf8Ptr());
+			EncodedString u_val = new EncodedString(val);
+			mdPresortUnmanaged.mdPresortSetMDMPAAdditionalPaymentPermitNumber(i, u_val.GetPtr());
 		}
 
 		public void SetMDMPAAdditionalPaymentPermitZipPlus4(string val) {
-			Utf8String u_val = new Utf8String(val);
-			mdPresortUnmanaged.mdPresortSetMDMPAAdditionalPaymentPermitZipPlus4(i, u_val.GetUtf8Ptr());
+			EncodedString u_val = new EncodedString(val);
+			mdPresortUnmanaged.mdPresortSetMDMPAAdditionalPaymentPermitZipPlus4(i, u_val.GetPtr());
 		}
 
 		public void SetMDCCRCharacteristic(string val) {
-			Utf8String u_val = new Utf8String(val);
-			mdPresortUnmanaged.mdPresortSetMDCCRCharacteristic(i, u_val.GetUtf8Ptr());
+			EncodedString u_val = new EncodedString(val);
+			mdPresortUnmanaged.mdPresortSetMDCCRCharacteristic(i, u_val.GetPtr());
 		}
 
 		public void SetMDCCRCharacteristicType(string val) {
-			Utf8String u_val = new Utf8String(val);
-			mdPresortUnmanaged.mdPresortSetMDCCRCharacteristicType(i, u_val.GetUtf8Ptr());
+			EncodedString u_val = new EncodedString(val);
+			mdPresortUnmanaged.mdPresortSetMDCCRCharacteristicType(i, u_val.GetPtr());
 		}
 
 		public void SetPOMLocaleKey(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetPOMLocaleKey(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetPOMLocaleKey(i, u_p1.GetPtr());
 		}
 
 		public void SetDDULocaleKey(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetDDULocaleKey(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetDDULocaleKey(i, u_p1.GetPtr());
 		}
 
 		public void SetDDUPostalCode(string p1) {
-			Utf8String u_p1 = new Utf8String(p1);
-			mdPresortUnmanaged.mdPresortSetDDUPostalCode(i, u_p1.GetUtf8Ptr());
+			EncodedString u_p1 = new EncodedString(p1);
+			mdPresortUnmanaged.mdPresortSetDDUPostalCode(i, u_p1.GetPtr());
 		}
 
-		private class Utf8String : IDisposable {
-			private IntPtr utf8String = IntPtr.Zero;
+		private class EncodedString : IDisposable {
+			private IntPtr encodedString = IntPtr.Zero;
+			private static Encoding encoding = Encoding.UTF8;
 
-			public Utf8String(string str) {
+			public EncodedString(string str) {
 				if (str == null)
 					str = "";
-				byte[] buffer = Encoding.UTF8.GetBytes(str);
+				byte[] buffer = encoding.GetBytes(str);
 				Array.Resize(ref buffer, buffer.Length + 1);
 				buffer[buffer.Length - 1] = 0;
-				utf8String = Marshal.AllocHGlobal(buffer.Length);
-				Marshal.Copy(buffer, 0, utf8String, buffer.Length);
+				encodedString = Marshal.AllocHGlobal(buffer.Length);
+				Marshal.Copy(buffer, 0, encodedString, buffer.Length);
 			}
 
-			~Utf8String() {
+			~EncodedString() {
 				Dispose();
 			}
 
 			public virtual void Dispose() {
 				lock (this) {
-					Marshal.FreeHGlobal(utf8String);
+					Marshal.FreeHGlobal(encodedString);
 					GC.SuppressFinalize(this);
 				}
 			}
 
-			public IntPtr GetUtf8Ptr() {
-				return utf8String;
+			public IntPtr GetPtr() {
+				return encodedString;
 			}
 
-			public static string GetUnicodeString(IntPtr ptr) {
+			public static string GetEncodedString(IntPtr ptr) {
 				if (ptr == IntPtr.Zero)
 					return "";
 				int len = 0;
@@ -2394,7 +2395,7 @@ namespace MelissaData {
 					return "";
 				byte[] buffer = new byte[len];
 				Marshal.Copy(ptr, buffer, 0, len);
-				return Encoding.UTF8.GetString(buffer);
+				return encoding.GetString(buffer);
 			}
 		}
 	}
