@@ -20,7 +20,7 @@ And return
 ## Tested Environments
 
 - Windows 10 64-bit .NET 7.0, Powershell 5.1
-- Melissa data files for 2024-08
+- Melissa data files for 2024-09
 
 ## Required File(s) and Programs
 
@@ -102,8 +102,8 @@ The console will then prompt you with the following warning shown in the image b
 
 #### Download this project
 ```
-$ git clone https://github.com/MelissaData/PresortObject-Dotnet
-$ cd PresortObject-Dotnet
+git clone https://github.com/MelissaData/PresortObject-Dotnet
+cd PresortObject-Dotnet
 ```
 
 #### Set up Melissa Updater 
@@ -138,23 +138,23 @@ When you have modified the script to match your data location, let's run the scr
 
     The script will prompt the user for a file path, then use the provided file to test Presort Object.  For example:
     ```
-    $ .\MelissaPresortObjectWindowsDotnet.ps1
+    .\MelissaPresortObjectWindowsDotnet.ps1
     ```
     For quiet mode:
     ```
-    $ .\MelissaPresortObjectWindowsDotnet.ps1 -quiet
+    .\MelissaPresortObjectWindowsDotnet.ps1 -quiet
     ```
 - Command Line 
 
     You can pass a file path in ```-file``` parameter and a license string in ```-license``` parameter to test Presort Object. For example:
     ```
-    $ .\MelissaPresortObjectWindowsDotnet.ps1 -file ".\MelissaPresortObjectSampleInput.csv" 
-    $ .\MelissaPresortObjectWindowsDotnet.ps1 -file ".\MelissaPresortObjectSampleInput.csv" -license "<your_license_string>"
+    .\MelissaPresortObjectWindowsDotnet.ps1 -file ".\MelissaPresortObjectSampleInput.csv" 
+    .\MelissaPresortObjectWindowsDotnet.ps1 -file ".\MelissaPresortObjectSampleInput.csv" -license "<your_license_string>"
     ```
     For quiet mode:
     ```
-    $ .\MelissaPresortObjectWindowsDotnet.ps1 -file ".\MelissaPresortObjectWindowsDotnet\MelissaPresortObjectSampleInput.csv" -quiet
-    $ .\MelissaPresortObjectWindowsDotnet.ps1 -file ".\MelissaPresortObjectWindowsDotnet\MelissaPresortObjectSampleInput.csv" -license "<your_license_string>" -quiet
+    .\MelissaPresortObjectWindowsDotnet.ps1 -file ".\MelissaPresortObjectWindowsDotnet\MelissaPresortObjectSampleInput.csv" -quiet
+    .\MelissaPresortObjectWindowsDotnet.ps1 -file ".\MelissaPresortObjectWindowsDotnet\MelissaPresortObjectSampleInput.csv" -license "<your_license_string>" -quiet
     ```
 This is the expected output from a successful setup for interactive mode:
 
