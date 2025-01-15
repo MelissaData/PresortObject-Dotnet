@@ -1,5 +1,10 @@
 # Melissa - Presort Object Windows Dotnet
 
+> ⚠️ **Important Announcement**  
+> This repository is no longer being updated as of January 01, 2025. 
+>
+> Melissa discontinued Presort Object on December 31, 2024. To learn more, please see the [Product Advisory](https://blog.melissa.com/product-news-updates/presort-object-plan-to-sunset-on-december-31-2024).
+
 ## Purpose
 This code showcases the Melissa Presort Object using C#.
 
